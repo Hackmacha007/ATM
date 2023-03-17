@@ -1,0 +1,40 @@
+/* Add background image and overlay */
+.bg-image {
+	background-image: url('https://source.unsplash.com/1600x900/?atm,finance');
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	filter: blur(3px);
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: -1;
+}
+
+/* Add animation to the welcome message */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+h1 {
+	animation: slideIn 1s ease-out;
+}
+
+/* Add hover effect to the buttons */
+button:hover {
+	transform: scale(1.1
